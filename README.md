@@ -4,19 +4,17 @@ Bangladesh Demographics Dashboard, purpose of the analysis is to explore and vis
  ]( https://www.kaggle.com/datasets/usmanlovescode/bangladesh-food-prices-dataset) dataset from Kaggle, the Tableau dashboard aims to provide actionable insights for urban planning and policy-making.
 
 
-### Data set
 
 <a href="https://www.kaggle.com/datasets/msjahid/bangladesh-districts-wise-population">
-  <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+  <button style="font-size: 20px;,background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
    Data set
   </button>
 </a>
  <br>
 
- ### Link
 
 <a href="https://public.tableau.com/views/BangladeshPopulation2022Dashboard/PopDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">
-  <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+  <button style="font-size: 20px;background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
     Explore Bangladesh Population Dashboard
   </button>
 </a>
