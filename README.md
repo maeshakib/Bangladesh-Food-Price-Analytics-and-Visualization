@@ -43,7 +43,8 @@ from the market history of Bangladesh we know that
 - Lentils maintain second-highest prices: Lentils show a steady increase, peaking at 142 BDT in 2021, with prices generally ranging from 74 BDT (2015) to 142 BDT, reflecting their high cost and sensitivity to global supply chains.
 
 
- 
+ ## Year Over Year Page (Power bi Dashboard)
+
 <img align="left" alt="Year Over Year page | PBI" width="1000px" src="https://github.com/maeshakib/z_resources/blob/c4eaacd2c3a4d472b179ed02d6e4edd1cf4f500e/YearOverYearPage%20Food%20Price%20in%20Bangladesh.png" /> <br>
 <br>
 ### Key Findings on data cleaning :
