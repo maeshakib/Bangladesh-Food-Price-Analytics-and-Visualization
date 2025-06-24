@@ -14,12 +14,17 @@ Tableau Bangladesh Population Dashboard [Link](https://public.tableau.com/views/
 
  
  
-### Data Cleaning 
 
-#### Planned Data cleaning:
-- Handling Missing Values: I will check for and address missing values in the dataset.
-- Handling Duplicate Data: I will identify and remove duplicate rows based on unique identifiers to ensure each division and district’s data is unique
-- Data Type Conversion: I will convert numerical variables (population, area) to appropriate numeric data types, and verify the representation of categorical variables.
+### Key Findings on data cleaning :
+I have utilized power query for data cleaning process.
+- Header Row Adjustment: Set the first row as the header to correct column naming. ensuring that the column names are accurate and correspond to the data.
+- Removing Unnecessary Rows: Removed the first row containing metadata. The first row contained metadata about the dataset, which needed to be removed.
+- Column Profiling: Enabled column profiling to check for errors; no errors were found.
+- Handling Null or Blank Values: Using column profiling, no significant errors were detected in the dataset under the "Error Value" section
+- Data Type Conversion: Converted "latitude" and "longitude" from text to Decimal Number for accurate geospatial mapping. Converted "price" and "usdprice" from text to Decimal Number for proper calculations.
+- Renaming Columns: Renamed “admin1” to Division and “admin2” to District for clarity
+- Outlier handling: I identified oil price 680 which is far from median 111 BDT, I replaced outlier with median price of the oil.
+
 
 ## Home Page (Power bi Dashboard)
   
@@ -47,15 +52,7 @@ from the market history of Bangladesh we know that
 
 <img align="left" alt="Year Over Year page | PBI" width="1000px" src="https://github.com/maeshakib/z_resources/blob/c4eaacd2c3a4d472b179ed02d6e4edd1cf4f500e/YearOverYearPage%20Food%20Price%20in%20Bangladesh.png" /> <br>
 <br>
-### Key Findings on data cleaning :
-I have utilized power query for data cleaning process.
-- Header Row Adjustment: Set the first row as the header to correct column naming. ensuring that the column names are accurate and correspond to the data.
-- Removing Unnecessary Rows: Removed the first row containing metadata. The first row contained metadata about the dataset, which needed to be removed.
-- Column Profiling: Enabled column profiling to check for errors; no errors were found.
-- Handling Null or Blank Values: Using column profiling, no significant errors were detected in the dataset under the "Error Value" section
-- Data Type Conversion: Converted "latitude" and "longitude" from text to Decimal Number for accurate geospatial mapping. Converted "price" and "usdprice" from text to Decimal Number for proper calculations.
-- Renaming Columns: Renamed “admin1” to Division and “admin2” to District for clarity
-- Outlier handling: I identified oil price 680 which is far from median 111 BDT, I replaced outlier with median price of the oil.
+
 
 ### Critical Data Analysis Outcomes from page Year Over Year Comparision
 
