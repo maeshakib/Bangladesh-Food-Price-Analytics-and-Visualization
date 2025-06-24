@@ -3,11 +3,7 @@ Bangladesh Food Price Analytics and Visualization
 Bangladesh Demographics Dashboard, purpose of the analysis is to explore and visualize urban data from Bangladeshi cities, uncovering patterns in population, infrastructure, and socio-economic factors. Using the [Bangladesh Food Prices Dataset
  ]( https://www.kaggle.com/datasets/usmanlovescode/bangladesh-food-prices-dataset) dataset from Kaggle, the Tableau dashboard aims to provide actionable insights for urban planning and policy-making.
 
-<img align="left" alt="Home page | PBI" width="1000px" src="https://github.com/maeshakib/z_resources/blob/405e11928e0f7da529312564d6136f2831873dc5/HomePage%20Food%20Price%20in%20Bangladesh.png" /> <br>
-<br>
- 
-<img align="left" alt="Home page | PBI" width="1000px" src="https://github.com/maeshakib/z_resources/blob/c4eaacd2c3a4d472b179ed02d6e4edd1cf4f500e/YearOverYearPage%20Food%20Price%20in%20Bangladesh.png" /> <br>
-<br>
+
 ### Data set
 
 <a href="https://www.kaggle.com/datasets/msjahid/bangladesh-districts-wise-population">
@@ -38,8 +34,32 @@ Bangladesh Demographics Dashboard, purpose of the analysis is to explore and vis
 - Handling Missing Values: I will check for and address missing values in the dataset.
 - Handling Duplicate Data: I will identify and remove duplicate rows based on unique identifiers to ensure each division and district’s data is unique
 - Data Type Conversion: I will convert numerical variables (population, area) to appropriate numeric data types, and verify the representation of categorical variables.
-  
 
+## Home Page (Power bi Dashboard)
+  
+<img align="left" alt="Home page | PBI" width="1000px" src="https://github.com/maeshakib/z_resources/blob/405e11928e0f7da529312564d6136f2831873dc5/HomePage%20Food%20Price%20in%20Bangladesh.png" /> <br>
+<br>
+
+### Critical Data Analysis Outcomes from page Year Over Year Comparision
+
+#### 1.Historical Food Price Trends: 
+from the market history of Bangladesh we know that
+- From 2005-2008 I found food price sharp increase, like Rice from 17.05 BDT to 30.51 BDT, Lentils from 44 to 80 , Oil 39 to 84 and Wheat 19.75 to 39 BDT, as external faction I identified Global - Food Price Surge in 2007–2008, depreciation of the U.S. dollar, export restrictions from the Countries like India and Vietnam impacted food prices during this periods.
+- From 2009–2012 also global food crisis significantly impacted Bangladesh, with rice prices peaking at 21–26 BDT per kg in 2012. Oil 60 to 99, Wheat 23 to 37 BDT.
+- From 2020–2024: The COVID-19 pandemic and subsequent supply chain disruptions, coupled with global inflation, pushed food prices higher. By 2023–2024, rice prices reportedly reached 41–49 BDT, Oil 79 to 129, Lentils 61 to 115 and Wheat 33 to 54 BDT per kg in some markets, seeing significant increases.
+
+#### 2.Regional Variations Identified:
+- Mymensingh shows the widest price range: Mymensingh has the largest price variation, with Lentils at 106 BDT, Oil at 122 BDT, Rice at 44 BDT, and Wheat at 55 BDT, indicating diverse commodity pricing dynamics in this division compared to others.
+- International price influence on Oil and Lentils: The elevated and stable prices of Oil and Lentils across divisions suggest a direct impact from international market prices, likely due to import dependency for these commodities in Bangladesh.
+
+#### 3.Commodity Price Variations Identified:
+- Oil consistently has the highest prices: Oil prices peak at 142 BDT around 2022, remaining the highest throughout the period, with notable spikes in 2008 (88 BDT) and 2020-2022 (131-142 BDT), likely due to international market influences and import dependency.
+- Lentils maintain second-highest prices: Lentils show a steady increase, peaking at 142 BDT in 2021, with prices generally ranging from 74 BDT (2015) to 142 BDT, reflecting their high cost and sensitivity to global supply chains.
+
+
+ 
+<img align="left" alt="Year Over Year page | PBI" width="1000px" src="https://github.com/maeshakib/z_resources/blob/c4eaacd2c3a4d472b179ed02d6e4edd1cf4f500e/YearOverYearPage%20Food%20Price%20in%20Bangladesh.png" /> <br>
+<br>
 ### Key Findings on data cleaning :
 I have utilized power query for data cleaning process.
 - Header Row Adjustment: Set the first row as the header to correct column naming. ensuring that the column names are accurate and correspond to the data.
@@ -49,27 +69,28 @@ I have utilized power query for data cleaning process.
 - Data Type Conversion: Converted "latitude" and "longitude" from text to Decimal Number for accurate geospatial mapping. Converted "price" and "usdprice" from text to Decimal Number for proper calculations.
 - Renaming Columns: Renamed “admin1” to Division and “admin2” to District for clarity
 - Outlier handling: I identified oil price 680 which is far from median 111 BDT, I replaced outlier with median price of the oil.
-### Critical Data Analysis Outcomes
+
+### Critical Data Analysis Outcomes from page Year Over Year Comparision
 
 
-
-#### YoY Price (BDT) Comparison (Division):
+#### 1.YoY Price (BDT) Comparison (Division):
 - This chart highlights the year-to-year price changes (in BDT) for specific commodities (e.g., wheat, rice, oil, lentils) within a selected Division and Selected Year with previous year.
 - It allows users to quickly identify short-term price fluctuations, such as the significant 18.778 BDT drop in oil prices, enabling targeted analysis of market volatility and informing immediate supply chain or pricing adjustments.
-2.
-#### YoY Compound Annual Growth Rate Price(%) Comparison with (Division):
+
+#### 2.YoY Compound Annual Growth Rate Price(%) Comparison with (Division):
 - By showing the CAGR from a base year (e.g., 2006) to a selected year (e.g., 2013) for a division, this chart provides a long-term perspective on price growth trends (e.g., 9.941% for oil).
 - It helps stakeholders understand the annualized rate of price increases, assess inflation impacts, and plan for sustainable food security strategies over extended periods.
-3.
-#### YoY Price (BDT) Comparison with (All Division):
+
+#### 3.YoY Price (BDT) Comparison with (All Division):
 - This chart compares Chittagong’s YoY price changes with the national average, revealing regional disparities (e.g., rice dropping 1.894 BDT more in Chittagong than nationally).
 - It aids in benchmarking regional performance, identifying areas of competitive pricing or supply issues, and supporting policy decisions tailored to specific divisions.
-4.
-#### YoY Compound Annual Growth Rate Price(%) Comparison with (All Division):
+
+#### 4.YoY Compound Annual Growth Rate Price(%) Comparison with (All Division):
 - This chart compares Chittagong’s CAGR with the national average (e.g., 0.928% higher for oil), offering insights into long-term regional price growth relative to the country.
 - It assists in evaluating whether Chittagong’s market aligns with or deviates from national trends, guiding investment or intervention strategies based on relative growth rates.
 
 
+## Used DAX code for analysis
 #### 1_YoY_AvgYearSalesDiff =
 ```
   VAR SelectedYear = VALUE(SELECTEDVALUE(wfp_food_prices_bgd[Year]))
